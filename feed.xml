@@ -1,28 +1,74 @@
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    {% if site.title %}
-    <title>{{ site.title | xml_escape }}</title>
-    {% endif %}
-    {% if site.description %}
-    <description>{{ site.description | xml_escape }}</description>
-    {% endif %}
-    <link>{{ '' | absolute_url }}</link>
-    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
-        </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-25T18:02:18+08:00</updated><id>/feed.xml</id><title type="html">KanroMiku</title><subtitle>Here's KanroMiku's Personal Blog!
+</subtitle><author><name>KanroMiku</name><email>kanromiku_lpc@yeah.net</email></author><entry><title type="html">裴语</title><link href="/%E8%A3%B4%E8%AF%AD" rel="alternate" type="text/html" title="裴语" /><published>2020-05-22T00:00:00+08:00</published><updated>2020-05-22T00:00:00+08:00</updated><id>/%E8%A3%B4%E8%AF%AD</id><content type="html" xml:base="/%E8%A3%B4%E8%AF%AD">&lt;h3 id=&quot;裴语告初四&quot;&gt;《裴语·告初四》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;裴曰：“余裴者，能命题并富修养者也。子须随余也。”
+秀对曰：“汝裴者，不识材也。未阅其文，先断其庸。枉为人表。”&lt;/p&gt;
+
+&lt;h5 id=&quot;第二则&quot;&gt;第二则&lt;/h5&gt;
+
+&lt;p&gt;裴曰：“四分题不可绝主旨，绝其主旨，则何其蠢也。”
+翀曰：“多乎哉？不多也！”&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语告或人&quot;&gt;《裴语·告或人》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-1&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;裴曰：“整理之时非休脑之秋矣。”&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语往昔&quot;&gt;《裴语·往昔》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-2&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;裴曰：“古有人谓鼠目寸光，今我阳[^ 1]目厘光更胜一筹。”&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语独秀&quot;&gt;《裴语·独秀》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-3&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;秀曰：“余知汝所讲，而又整理，何也？余从未记汝所言一字。”&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语日常&quot;&gt;《裴语·日常》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-4&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;裴曰：“汝之转笔如轮者，吾之厌也。”
+铄遂不动也。&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语外记&quot;&gt;《裴语·外记》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-5&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;铄曰：“皆其母为人才矣。”
+秀附曰：“似窃格瓦拉也。”&lt;/p&gt;
+
+&lt;h5 id=&quot;第二则-1&quot;&gt;第二则&lt;/h5&gt;
+
+&lt;p&gt;翀曰：“裴姊于拓展班，色温和并满目慈怜而视众生，悄然行动；&lt;/p&gt;
+
+&lt;p&gt;裴先生于十有三班，语高而和寡，或则忧虑满腹，或则鸡飞而狗跳，满目狼藉。”&lt;/p&gt;
+
+&lt;h3 id=&quot;裴语侧记朱记&quot;&gt;《裴语·侧记·朱记》&lt;/h3&gt;
+
+&lt;h5 id=&quot;第一则-6&quot;&gt;第一则&lt;/h5&gt;
+
+&lt;p&gt;朱曰：“吾之原则者，消气而不生气也。”&lt;/p&gt;
+
+&lt;h5 id=&quot;第二则-2&quot;&gt;第二则&lt;/h5&gt;
+
+&lt;p&gt;朱曰：“发霉哉，翀也。题述之旨者，令子填‘黄曲霉菌’也。”&lt;/p&gt;
+
+&lt;p&gt;翀附曰：“余诚为脑霉者也。”&lt;/p&gt;
+
+&lt;h5 id=&quot;第三则&quot;&gt;第三则&lt;/h5&gt;
+
+&lt;p&gt;朱曰：“子之能实验室制取铁架台，其父辈铁匠者哉？其家中为铁艺者哉？”&lt;/p&gt;
+
+&lt;p&gt;妍曰：“非也。”&lt;/p&gt;
+
+&lt;p&gt;翀曰：“余之盲也。”&lt;/p&gt;
+
+&lt;h5 id=&quot;第四则&quot;&gt;第四则&lt;/h5&gt;
+
+&lt;p&gt;朱曰：“汝等，皆臭流氓是也。”&lt;/p&gt;</content><author><name>KanroMiku</name><email>kanromiku_lpc@yeah.net</email></author><category term="Fun" /><summary type="html">《裴语·告初四》 第一则 裴曰：“余裴者，能命题并富修养者也。子须随余也。” 秀对曰：“汝裴者，不识材也。未阅其文，先断其庸。枉为人表。” 第二则 裴曰：“四分题不可绝主旨，绝其主旨，则何其蠢也。” 翀曰：“多乎哉？不多也！” 《裴语·告或人》 第一则 裴曰：“整理之时非休脑之秋矣。” 《裴语·往昔》 第一则 裴曰：“古有人谓鼠目寸光，今我阳[^ 1]目厘光更胜一筹。” 《裴语·独秀》 第一则 秀曰：“余知汝所讲，而又整理，何也？余从未记汝所言一字。” 《裴语·日常》 第一则 裴曰：“汝之转笔如轮者，吾之厌也。” 铄遂不动也。 《裴语·外记》 第一则 铄曰：“皆其母为人才矣。” 秀附曰：“似窃格瓦拉也。” 第二则 翀曰：“裴姊于拓展班，色温和并满目慈怜而视众生，悄然行动； 裴先生于十有三班，语高而和寡，或则忧虑满腹，或则鸡飞而狗跳，满目狼藉。” 《裴语·侧记·朱记》 第一则 朱曰：“吾之原则者，消气而不生气也。” 第二则 朱曰：“发霉哉，翀也。题述之旨者，令子填‘黄曲霉菌’也。” 翀附曰：“余诚为脑霉者也。” 第三则 朱曰：“子之能实验室制取铁架台，其父辈铁匠者哉？其家中为铁艺者哉？” 妍曰：“非也。” 翀曰：“余之盲也。” 第四则 朱曰：“汝等，皆臭流氓是也。”</summary></entry></feed>
